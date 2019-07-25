@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="UTF-8">
+    <title>☪ Sailor Moon Pomodoro Timer ☪</title>
+    <LINK href="smpom.css" rel="stylesheet" type="text/css">
+    <script
+            src="http://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
+</head>
+  <header><h1>Sailor Moon Pomodoro Timer</h1>
+  </header>
+  <body>
+   <div class="container">
+
+       <button id="start">►</button><button id="stop">‖</button>
+       <p>Pause before restarting session.<button id="reset">↻</button></div></p>
+       <div id="timer-label">
+           <h2>Session</h2> <!-- change to display "Session" later -->
+       </div>
+       <h2 id="time-left">00:00</h2> <!-- should always display value mm:ss -->
+
+   <!-- <div id="bs-box"> -->
+   <span id="break-label">{Break Length}</span>
+   <input id="break-length" value="5" type="number" min="1" max="30" readonly="true">
+   <button onclick="document.querySelector('#break-length').stepUp()" id="break-increment">↑</button>
+   <button onclick="document.querySelector('#break-length').stepDown()" id="break-decrement">↓</button>
+
+   <span id="session-label">{Session Length}</span>
+   <input id="session-length" value="25" type="number" min="1" max="60" readonly="true">
+   <button onclick="document.querySelector('#session-length').stepUp()" id="session-increment">↑</button>
+   <button onclick="document.querySelector('#session-length').stepDown()" id="session-decrement">↓</button>
+ <!-- later use container/flexbox to display the break and session lengths inline-->
+
+    </div>
+   <script src="smpom-2.js"></script>
+  </body>
+</html>
+
+<!--
+cute sailormoon themed pomodoro clock
+generates random sailormoon meme pic after end of session
+and start of new session
+(OR sailormoon memes rotating slideshow in background every try 1sec first to see if working,
+then EVERY 10 MIN)
++ simple check list on the side !!! (if time)
+-->
