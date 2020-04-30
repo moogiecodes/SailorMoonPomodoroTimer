@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <link href='https://fonts.googleapis.com/css?family=Major Mono Display' rel='stylesheet'>
+
 <head>
-    <meta charset="UTF-8">
-    <title>☪ Sailor Moon Pomodoro Timer ☪</title>
-    <LINK href="smpom.css" rel="stylesheet">
-    <script
-            src="http://code.jquery.com/jquery-3.4.1.js"
-            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-            crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <title>☪ Sailor Moon Pomodoro Timer ☪</title>
+  <LINK href="style.css" rel="stylesheet">
+  <script src="http://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
 </head>
 <header>sailor 🌙 moon<h1>pomodoro timer</h1>
-    <!-- random pic slideshow -->
-    <img id="slide" width="330" height="215">
+  <!-- random pic slideshow -->
+  <img id="slide" width="330" height="215">
 
 </header>
+
 <body>
   <div class="control-box">
     <button id="start">►</button><button id="stop">‖</button>
@@ -21,25 +21,27 @@
     <button id="reset">↻</button>
   </div>
 
-  <div id="timer-label"><h1>session</h1></div>
+  <div id="timer-label">
+    <h1>session</h1>
+  </div>
   <h1 id="time-left">00:00</h1>
 
   <!-- break and session length flexbox -->
   <div class="bs-container">
     <div>
-        <p id="break-label">{break length}</p>
-        <button onclick="document.querySelector('#break-length').stepUp()" id="break-increment">↑</button>
-        <input id="break-length" value="5" type="number" min="1" max="30" readonly="true">
-        <button onclick="document.querySelector('#break-length').stepDown()" id="break-decrement">↓</button>
+      <p id="break-label">{break length}</p>
+      <button onclick="document.querySelector('#break-length').stepUp()" id="break-increment">↑</button>
+      <input id="break-length" value="5" type="number" min="1" max="30" readonly="true">
+      <button onclick="document.querySelector('#break-length').stepDown()" id="break-decrement">↓</button>
     </div>
     <div>
-        <p id="session-label">{session length}</p>
-        <button onclick="document.querySelector('#session-length').stepUp()" id="session-increment">↑</button>
-        <input id="session-length" value="25" type="number" min="1" max="60" readonly="true">
-        <button onclick="document.querySelector('#session-length').stepDown()" id="session-decrement">↓</button>
+      <p id="session-label">{session length}</p>
+      <button onclick="document.querySelector('#session-length').stepUp()" id="session-increment">↑</button>
+      <input id="session-length" value="25" type="number" min="1" max="60" readonly="true">
+      <button onclick="document.querySelector('#session-length').stepDown()" id="session-decrement">↓</button>
     </div>
   </div>
-<script src="smpom-2.js"></script>
+  <script src="main.js"></script>
 </body>
-</html>
 
+</html>
