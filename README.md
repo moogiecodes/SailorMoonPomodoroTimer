@@ -1,6 +1,6 @@
-# CS81-Project
-Final project for 1st Javascript Programming course at SMC incorporating:
-HTML, CSS, JS, Jquery
+# Sailor Moon Pomodoro Timer
+
+Technologies: HTML, CSS, Javascript, Jquery
 
 The Pomodoro Technique was developed by Francesco Cirillo as a time management
 technique to promote productivity and efficiency. The general idea is to break 
@@ -10,6 +10,7 @@ breaks.
 My project is a simple Pomodoro Timer that is Sailor Moon themed! ☪ 
 The timer is customizable with a session being 1-60 minutes and break 1-30 
 minutes long. 
+
 Features:
 - Able to pause and resume during any session
 - Able to restart session 
